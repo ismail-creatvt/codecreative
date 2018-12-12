@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="logo.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Coding is Fun</title>
+</head>
+<body>
+<nav>
+    <figure>
+        <img id="logo" src="logo.svg"/>
+        <figcaption>CreativeLogic</figcaption>
+    </figure>
+    <ul>
+        <li>
+            HOME
+        </li>
+        <li>
+            Code Examples
+        </li>
+        <li>
+            Tutorials
+        </li>
+        <li>
+            Contact
+        </li>
+    </ul>  
+</nav>
+<article>
+   
+        <blockquote>
+            <p>
+                You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.            
+            </p>   
+        </blockquote>
+        <p>
+            John Romero
+        </p>
+        
+</article>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    var date = new Date();
+    console.log("Time : " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + ":" + date.getMilliseconds());
+    var count = 0;
+    var times = [1000,3000,5000,8000,10000,13000,18000,20000,25000,30000,40000,50000,60000,80000,100000,130000,150000,200000,300000];
+    (function(){
+        setTimeout(function(){
+            count++;
+            location.reload();
+        },times[Math.floor(Math.random())*times.length]*10);
+    })()
+</script>
+</body>
+</html>

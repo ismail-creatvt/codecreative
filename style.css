@@ -1,0 +1,136 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+nav{
+    background:#000;
+    height:100%;
+    width: 300px;
+    position: fixed;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;
+
+}
+
+img#logo{
+    height: 200px;
+    width: 200px;
+    justify-self: center;
+}
+
+nav figure figcaption{
+    color: #6ABD45;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+nav ul{
+    padding: 0px;
+    padding-top:20px;
+    background:#444444;
+    margin: 0;
+    font-weight: bolder;
+    color:#fff;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    padding: 15px;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+nav ul li:hover{
+    background: #6ABD45;
+}
+
+article{
+    margin-left: 300px;
+    background: #eeeeee;
+    padding: 20px;
+    position: fixed;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+blockquote {
+    padding: 36px 50px;
+    position: relative;
+    background: #c2c2c2;
+}
+
+blockquote::before, blockquote::after {
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    content: '';
+    position: absolute;
+    background: #c2c2c2;
+    box-shadow: 0 2px rgba(0,0,0,.25);
+}
+
+blockquote::before {
+    right: 100%;    
+}
+
+blockquote::after {
+    left: 100%;
+}
+
+
+p {
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+blockquote p::before {
+    top: 0;
+    left: 16px;
+    color: #fff;
+    content: '“';
+    font-size: 3em;
+    position: absolute;
+    text-shadow: -3px 0 #c2c2c2;
+}
+
+blockquote p::after {
+    right: 16px;
+    color: #fff;
+    content: '”';
+    bottom: -32px;
+    font-size: 3em;
+    position: absolute;
+    text-shadow: 3px 0 #c2c2c2;
+}
+
+blockquote+p{
+    float: right;
+    padding: 20px;
+    margin: 0;
+    background: #6ABD45;
+}
+
+li.glide__slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.glide{
+    height: 900px;
+    width: 100%;
+}
